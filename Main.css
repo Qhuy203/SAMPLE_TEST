@@ -20,6 +20,21 @@
   font-weight: 400;
   font-style: italic;
 }
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 1000;
+  font-style: italic;
+  font-display: swap;
+}
 
 * {
   margin: 0;
