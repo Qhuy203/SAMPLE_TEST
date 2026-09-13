@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
 @font-face {
   font-family: 'Poppins';
   src: url('./fonts/Poppins-Regular.woff2') format('woff2');
   font-weight: 400;
-  /* Regular */
   font-style: normal;
 }
 
@@ -10,7 +11,6 @@
   font-family: 'Poppins';
   src: url('./fonts/Poppins-Bold.woff2') format('woff2');
   font-weight: 700;
-  /* Bold */
   font-style: normal;
 }
 
@@ -18,14 +18,28 @@
   font-family: 'Poppins';
   src: url('./fonts/Poppins-Italic.woff2') format('woff2');
   font-weight: 400;
-  /* Italic */
   font-style: italic;
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+header,
+.nav_content,
+.main_content1 {
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -133,16 +147,17 @@ header {
   color: white;
   background-color: #FF5A3C;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  display: flex;
   text-align: center;
   padding: 15px 15px;
-  width: 35%;
+  width: fit-content;
 }
 
 .description {
   color: #9EABB2;
   font-size: 18px;
-  width: 65%;
+  width: 85%;
   margin-bottom: 20px;
 }
 
@@ -169,7 +184,7 @@ header {
 
 .price {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 5px;
   color: black;
 }
@@ -244,7 +259,7 @@ header {
 }
 
 .bar_chart_count p:first-child {
-  font-size: 18px;
+  font-size: 25px;
   color: black;
 }
 
@@ -256,7 +271,7 @@ header {
 
 .title_2 {
   align-items: center;
-  width: 40%;
+  width: 45%;
   padding-left: 2%;
   padding-right: 2%;
   font-size: 23px;
@@ -282,7 +297,7 @@ header {
   padding: 20px;
   box-shadow: 0 0 0 0.5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-radius: 10px;
 }
 
@@ -363,6 +378,36 @@ header {
   display: flex;
   align-items: flex-start;
   margin-bottom: 5%;
+}
+
+.setting > .house_setting:nth-of-type(2) {
+  align-items: flex-start;
+  gap: 18px;
+  margin: 0 -20px 24px;
+  padding: 20px 0px 0px 20px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 12px 28px rgba(18, 42, 46, 0.04);
+}
+
+.setting > .house_setting:nth-of-type(2) p {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 0%;
+}
+
+.setting > .house_setting:nth-of-type(2) h4 {
+  margin-bottom: 5%;
+  margin-left: 0%;
+}
+
+.house_setting p {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.house_setting h4 {
+  margin-left: 5%;
 }
 
 .about_home {
@@ -473,6 +518,7 @@ h3 {
   width: 80%;
   height: fit-content;
   display: flex;
+  justify-content: center;
   padding-top: 3%;
   gap: 5%;
   flex-wrap: wrap;
@@ -488,6 +534,7 @@ h3 {
 
 .service p {
   font-size: 14px;
+  color: #8C8C8C;
 }
 
 .learn_more {
@@ -560,7 +607,7 @@ h3 {
 }
 
 .money {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   margin-top: 10%;
 }
@@ -607,6 +654,7 @@ h3 {
   padding-right: 2%;
   border-radius: 10px;
   height: 130px;
+  transform: translateX(-120px);
 }
 
 .unit_picture {
@@ -621,6 +669,14 @@ h3 {
 
 .unit_in4 {
   width: 95%;
+  color: white;
+  margin-right: 5%;
+}
+
+
+.unit_in4 h3 {
+  color: black;
+  font-weight: 700;
 }
 
 .unit_in4 p {
@@ -658,7 +714,7 @@ h3 {
 }
 
 .feed_back p {
-  width: 35%;
+  width: 30%;
   color: #757474;
 }
 
@@ -765,6 +821,9 @@ h3 {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-card h3 {
@@ -773,14 +832,16 @@ h3 {
 }
 
 .project-card button {
-  background-color: #ff5c5c;
-  color: #fff;
+  background-color: #fff;
+  color: #FF5A3C;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 14px;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .subscribe {
@@ -832,6 +893,11 @@ h3 {
   box-shadow: 0 0 0 0.25px rgba(0, 0, 0, 0.1);
 }
 
+.card_post:first-child {
+  background-color: #fff;
+  box-shadow: 0 16px 32px rgba(23, 27, 42, 0.12);
+}
+
 .card_image {
   width: 100%;
   height: 45%;
@@ -843,6 +909,7 @@ h3 {
   padding-top: 7%;
   text-align: left;
   height: 50%;
+  gap: 5%;
 }
 
 .card_in4 p {
@@ -952,13 +1019,12 @@ h3 {
 }
 
 .info ul li::before {
-  content: '\2714';
   color: #ff5c5c;
   margin-right: 10px;
 }
 .info p{
   color: #8C8C8C;
-  width: 70%;
+  width: 55%;
   font-size: 13px;
   margin-bottom: 5%;
 }
@@ -1115,7 +1181,6 @@ h3 {
 .contribute p:nth-child(2){
   border-bottom: 2px solid #4D69AF;
 }
-/* Tablet and mobile layout: no framework required. */
 @media (max-width: 1024px) {
   .header_content,
   .nav_content,
